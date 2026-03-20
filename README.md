@@ -2,208 +2,272 @@
 
 ## Overview
 
-Multi-Dimensional Disaster Resilience Analysis is a global data analysis and visualization project focused on understanding disaster resilience through a fused, multi-source dataset. The repository is built around the idea that resilience is not a single value or a simple yes/no condition. Instead, it is a combination of several interconnected dimensions that together shape how a country or region experiences and responds to disasters. In this project, those dimensions are framed through exposure, vulnerability, and adaptive capacity, with the final insights presented through interactive Tableau visualizations and supporting analytical outputs.
+Multi-Dimensional Disaster Resilience Analysis is a global data fusion, feature engineering, and visualization project designed to study disaster resilience through multiple analytical dimensions. The repository focuses on how different countries and regions can be compared using indicators that reflect exposure, vulnerability, and adaptive capacity. Rather than reducing resilience to a single score, the project builds a richer analytical framework that combines raw source data, processed outputs, documentation, and interactive Tableau-based storytelling.
 
-The repository is structured as a complete workflow: raw inputs are collected, data is merged and cleaned, features are engineered, results are generated, documentation is stored, and a Tableau workbook is used to communicate the findings. This makes the project useful not only as an analysis artifact, but also as a reproducible data pipeline and an interactive storytelling tool.
+The repository is structured as a complete workflow from data preparation to presentation. It includes Python code for merging and transforming datasets, generated results stored as images and tables, documentation files that describe the dataset and methodology, and a Tableau workbook used for interactive reporting. This makes the project valuable not only as an academic or analytical exercise, but also as a reproducible and well-organized data workflow.
 
-The aim of the repository is to support a deeper understanding of global disaster resilience. By combining multiple datasets and transforming them into one coherent structure, the project makes it possible to compare resilience patterns across countries, inspect relationships between indicators, and identify areas where risk may be amplified or reduced by socioeconomic and structural conditions.
+The overall purpose of the repository is to provide a clearer understanding of how disaster resilience varies across the world. By combining multiple indicators into one unified dataset, the project helps reveal patterns that would be difficult to observe in isolated sources. It also demonstrates how feature engineering and visual analytics can turn complex, multi-dimensional data into a compelling story.
 
 ## Project Objective
 
-The main objective of the project is to build a practical framework for disaster resilience analysis. Disaster resilience is often discussed in broad terms, but meaningful analysis requires measurable indicators. This repository attempts to create a more structured approach by linking together data about exposure, vulnerability, and adaptive capacity.
+The central objective of this repository is to analyze global disaster resilience in a way that is both data-driven and visually interpretable. Disaster resilience is influenced by many factors: economic strength, social conditions, environmental exposure, and a region’s ability to adapt after a disaster. This project brings those ideas together into a single analytical pipeline.
 
-The project is especially useful for:
+The project aims to:
 
-- comparing resilience across countries or regions
-- identifying patterns in disaster susceptibility
-- supporting evidence-based policy discussions
-- exploring how different indicators interact
-- communicating complex results in a visual and accessible form
+- merge datasets from different sources
+- create a unified analytical structure
+- engineer variables that support resilience interpretation
+- compare countries and regions across multiple dimensions
+- present results through clear visuals and dashboards
+- document the process for transparency and reproducibility
 
-The analysis is designed to answer questions such as:
+In practice, the project provides a foundation for exploring questions such as:
 
-- Which places appear most vulnerable to disasters?
-- What indicators contribute to stronger or weaker resilience?
-- How do exposure and adaptive capacity interact?
-- What does the final fused dataset reveal about regional differences?
+- Which countries appear most exposed to disaster-related risk?
+- How does vulnerability differ across socio-economic groups?
+- What role does adaptive capacity play in resilience?
+- How can visual storytelling improve understanding of disaster patterns?
 
 ## Repository Structure
 
-The repository is organized into several clearly separated folders that reflect the project workflow from source code to final outputs.
+The repository is cleanly organized into folders that reflect the full lifecycle of the analysis.
 
 ### `src/`
-This folder contains the core Python source code for the project.
+This folder contains the Python source code for the project.
 
-- `src/fusion.py` is the main processing script.
-- It is responsible for combining datasets, preparing the analytical structure, and generating the final fused dataset used in later stages.
-- The script likely includes cleaning logic, column harmonization, feature creation, and export operations.
-
-This source folder is the engine of the repository. It transforms raw inputs into something ready for analysis and visualization.
+- `src/fusion.py` is the key processing script.
+- It is responsible for loading raw data, merging datasets, cleaning and transforming fields, and generating the final dataset used for analysis and Tableau visualization.
+- This script represents the computational core of the repository.
 
 ### `data/`
-This folder contains the data inputs and processed versions of the dataset.
+This folder contains the raw and processed data assets.
 
-- `data/raw/` stores original or source-level data files.
-- `data/processed/` stores transformed or cleaned outputs that are ready for analysis.
+- `data/raw/` stores original input datasets.
+- `data/processed/` stores cleaned or transformed outputs used in later steps.
 
-This separation is important because it preserves the original data while keeping derived outputs organized and reproducible.
+This separation helps preserve the original data while keeping processed files organized and easy to reuse.
 
 ### `docs/`
-This folder stores written documentation that explains the project in greater detail.
+This folder contains project documentation.
 
-- `Dataset_Documentation_Sheet.pdf` describes the dataset, its structure, and likely the meaning of the variables.
-- `Multi-Dimensional-Disaster-Resilience-Analysis_Report.pdf` contains the main project report with methodology, analysis, and results.
-
-These documents help explain the project beyond the code itself and are essential for interpretation.
+- `Dataset_Documentation_Sheet.pdf` describes the dataset and its structure.
+- `Multi-Dimensional-Disaster-Resilience-Analysis_Report.pdf` is the main report, which likely explains methodology, findings, and interpretation.
 
 ### `metadata/`
-This folder contains metadata files that support project traceability.
+This folder contains metadata files supporting the project.
 
-- `authors.txt` lists authorship or contributor information.
+- `authors.txt` records author contributions and responsibilities.
 
 ### `results/`
-This folder contains outputs generated by the analysis pipeline.
+This folder contains output artifacts from the analysis.
 
-- `results/tables/` stores tabular outputs.
-- `results/visualizations/` stores visual or chart-based output files.
-
-This folder reflects the final analytical stage of the project, where processed data becomes interpretable results.
+- `results/tables/` includes tabular outputs.
+- `results/visualizations/` includes visual screenshots and analytical images.
 
 ### `tableau/`
-This folder contains the packaged Tableau workbook.
+This folder contains the Tableau workbook.
 
-- `multi-dimensional-disaster-resilience-analysis.twbx` is the Tableau project file that holds dashboards and interactive visualizations.
-
-This is where the final visual storytelling occurs.
+- `multi-dimensional-disaster-resilience-analysis.twbx` is the packaged Tableau project used for interactive dashboards.
 
 ### `screenshots/`
-This folder contains screenshots that document the project workflow and outputs.
+This folder contains project screenshots that help explain the workflow and final outputs.
 
-- `screenshots/code/` focuses on the code and data-preparation stages.
-- `screenshots/outputs/` focuses on the resulting datasets and output artifacts.
-
-The screenshots make the repository much easier to understand because they provide visual evidence of the workflow.
-
-## README Status Before Update
-
-The existing README in the repository is minimal and only contains the title `# Dav-Project`. That means the repository currently lacks a full description of the project purpose, workflow, folder structure, analysis method, screenshots, and results. A detailed README is especially important for a project like this because it helps users understand the relationship between the code, the fused dataset, and the Tableau visualizations.
+- `screenshots/code/` documents the code and data-fusion process.
+- `screenshots/outputs/` documents final datasets and output artifacts.
 
 ## Workflow Summary
 
-The repository follows a clear end-to-end workflow.
+The project follows a simple but effective workflow:
 
-1. **Raw datasets are collected** and stored in the `data/raw/` directory.
-2. **The fusion script** in `src/fusion.py` loads and merges the source data.
-3. **Data cleaning and transformation** are applied to standardize the structure.
-4. **Feature engineering** creates relevant variables for resilience analysis.
-5. **Processed outputs** are saved in `data/processed/` and `results/`.
-6. **Documentation** is stored in the `docs/` folder for reference and interpretation.
-7. **Tableau dashboards** are created in the `tableau/` workbook.
-8. **Screenshots** are captured to visually explain the workflow and outputs.
+1. Raw data is collected and placed in `data/raw/`.
+2. The Python script in `src/fusion.py` merges and transforms the datasets.
+3. The fused data is cleaned and refined into an analysis-ready format.
+4. Output tables and visualizations are saved in `results/`.
+5. Documentation is stored in `docs/`.
+6. The Tableau workbook in `tableau/` is used to build interactive dashboards.
+7. Screenshots are captured to explain the workflow and final outputs.
 
-This type of pipeline is useful because it keeps analysis steps transparent and allows each stage of the project to be inspected separately.
+This pipeline makes the repository practical, understandable, and reproducible.
 
 ## Data Fusion and Feature Engineering
 
-The most important technical part of the repository is the fusion workflow. Disaster resilience analysis usually requires multiple indicators that come from different sources and may use different formats. These indicators must be merged into one consistent structure before they can be analyzed together.
+The most important technical component of this project is the fusion workflow. Disaster resilience analysis often requires combining multiple datasets that may use different formats, variable names, and levels of granularity. The purpose of the fusion process is to create one clean and meaningful analytical dataset from those sources.
 
-The `fusion.py` script appears to be the central component for that process. It likely performs several tasks:
+The `src/fusion.py` script likely performs tasks such as:
 
-- loading raw input datasets
-- matching records across shared fields such as country or region
-- normalizing names and column structures
-- cleaning null, duplicate, or inconsistent values
-- building resilience-related derived features
-- exporting the final fused dataset
+- loading multiple source files
+- aligning country or region identifiers
+- standardizing names and column formatting
+- cleaning missing values and inconsistencies
+- building derived metrics for resilience analysis
+- exporting the final dataset for Tableau and reporting
 
-Feature engineering is especially important because raw indicators alone may not directly express resilience. Instead, resilience has to be inferred or modeled through combinations of factors. For example, a region with high exposure may not be equally vulnerable if it also has strong adaptive capacity. Likewise, a country with moderate exposure may still face high disaster risk if its vulnerability is severe and its infrastructure is weak.
+Feature engineering is essential because raw indicators alone often do not communicate resilience clearly. By combining variables into meaningful dimensions, the analysis can reflect broader concepts such as exposure, vulnerability, and capacity. This allows the final dashboards and tables to communicate more than just raw values — they tell a story about resilience conditions across the world.
 
-The screenshot set in `screenshots/code/` and `screenshots/outputs/` gives a visual explanation of this transformation process.
+## Authors and Contributions
 
-## Tableau and Visualization Layer
+The repository includes a metadata file that documents author contributions.
 
-The Tableau workbook in the `tableau/` folder is the presentation layer of the project. It turns the fused and engineered dataset into a visual interface where users can explore patterns interactively.
+### `metadata/authors.txt`
+The authorship file identifies the contributors and their roles:
 
-This is important because disaster resilience is easier to understand when the data is displayed in a visual format rather than only in tables. Tableau can help users:
+- **i232520 – Muhammad Noor**
+  - Helped in data finding
+  - Helped in data fusion
+  - Helped in documenting dataset sheet
+  - Report making and analysis summarization
 
-- compare countries side by side
-- examine resilience dimensions interactively
-- inspect patterns across regions
-- identify outliers and clusters
-- explore the impact of feature engineering on the final dataset
+- **i232536 – Ibrahim Kiani**
+  - Helped in making Tableau visualizations
+  - Feature engineering and model formulation
+  - Conducted comparative analysis
+  - Conducted analytical storytelling
 
-The workbook serves as the bridge between the analytical backend and the communication layer of the project.
+This shows that the project was not only built as a code artifact, but also developed through a collaborative workflow where each contributor played a distinct role in the analysis and presentation stages.
 
-## Screenshots and What They Show
+## Dataset Documentation
 
-The screenshots are one of the most useful parts of the repository because they make the workflow easier to follow.
+The repository includes a dataset documentation sheet in the `docs/` folder.
+
+### `docs/Dataset_Documentation_Sheet.pdf`
+This file provides important supporting information about the dataset, including its structure, likely source context, and the meaning of the fields used in the analysis. In a project like this, documentation is critical because the final interpretation depends on understanding what each variable represents and how the data was prepared.
+
+A dataset documentation sheet helps users:
+
+- understand the data sources
+- interpret the columns correctly
+- trace how variables were derived
+- evaluate the reliability of the analysis
+- reproduce the workflow if needed
+
+## Tableau Workbook
+
+The `tableau/` folder contains the interactive reporting layer of the project.
+
+### `tableau/multi-dimensional-disaster-resilience-analysis.twbx`
+This is the Tableau packaged workbook used to create interactive dashboards and visual storytelling views. Although the workbook contents cannot be extracted directly from the repository listing, its presence confirms that the project includes an exploratory and presentation-focused visualization layer.
+
+The Tableau workbook is important because it transforms the dataset into a user-friendly visual experience. It likely supports:
+
+- comparison of resilience-related indicators
+- filtering and interaction by country or region
+- thematic dashboards for different dimensions
+- clear visual storytelling for non-technical audiences
+
+In this project, Tableau appears to be the final communication platform that turns the processed dataset and analytical outputs into an accessible dashboard experience.
+
+## Results Folder
+
+The `results/` directory contains output files that show the final state of the analysis.
+
+### `results/tables/`
+This folder contains tabular output artifacts.
+
+- `results/tables/finalised-headed-dataset.jpg`
+
+This image shows the final prepared dataset in a tabular format. It is important because it demonstrates that the data fusion and feature engineering steps produced a clean and structured final dataset suitable for analysis.
+
+### `results/visualizations/`
+This folder contains the visual outputs of the project.
+
+- `results/visualizations/disaster-types-flow.jpg`
+- `results/visualizations/interactive-dashboard-overview.jpg`
+- `results/visualizations/resilience-over-time.jpg`
+- `results/visualizations/socio-economic-groups.jpg`
+- `results/visualizations/vulnerability-vs-exposure-map.jpg`
+
+These screenshots provide a visual summary of the analytical output and likely represent key findings or dashboard views.
+
+## Screenshots: Code and Workflow
+
+The `screenshots/code/` folder documents the preparation and fusion process.
 
 ### Project flow
 ![Project flow](screenshots/code/project-flow.jpg)
 
-This image shows the overall conceptual and operational flow of the project, helping the viewer understand how the analysis is organized from start to finish.
+This image outlines the overall workflow of the repository and how data moves through the project from source to output.
 
 ### Merging datasets
 ![Merging datasets](screenshots/code/merging-datasets.jpg)
 
-This screenshot captures the dataset fusion stage, where multiple data sources are combined into one coherent structure.
+This screenshot shows the key data-merging stage, where multiple inputs are combined into a unified structure.
 
-### Important metrics during feature engineering
+### Important feature-engineering metrics
 ![Feature engineering metrics](screenshots/code/feature-eng-important-metrics.jpg)
 
-This image highlights the key indicators or metrics used to build the disaster resilience framework.
+This image highlights the major indicators and values used to build the resilience framework.
 
-### Loading datasets
-![Loading datasets](screenshots/outputs/loading-datasets.jpg)
+## Screenshots: Final Outputs
 
-This screenshot documents the beginning of the data workflow, showing the input datasets being loaded for processing.
+The `results/outputs/` and `results/visualizations/` files show how the project concludes with tables and visuals.
 
-### Final fused dataset
-![Final fused dataset](screenshots/outputs/final-fused-dataset.jpg)
+### Finalised headed dataset
+![Finalised headed dataset](results/tables/finalised-headed-dataset.jpg)
 
-This screenshot shows the consolidated dataset that results after the merging and transformation workflow.
+This screenshot shows the resulting analysis-ready table, confirming that the data fusion process produced a structured dataset.
 
-### Final fused dataset column names
-![Final fused dataset columns](screenshots/outputs/final-fused-dataset-column-names.jpg)
+### Disaster types flow
+![Disaster types flow](results/visualizations/disaster-types-flow.jpg)
 
-This image helps explain the structure of the final dataset by showing the names of the generated fields.
+This visual appears to summarize how disaster categories or pathways are represented in the final analysis.
 
-### Feature engineering output
-![Feature engineering final dataset](screenshots/outputs/feature-engineering-final-dataset.jpg)
+### Interactive dashboard overview
+![Interactive dashboard overview](results/visualizations/interactive-dashboard-overview.jpg)
 
-This screenshot presents the final result of the feature-engineering stage, where derived indicators are prepared for analysis and visualization.
+This screenshot presents the overall dashboard layout and shows how the final visualization experience is organized.
+
+### Resilience over time
+![Resilience over time](results/visualizations/resilience-over-time.jpg)
+
+This image likely shows temporal trends, helping the viewer understand how resilience-related measures change over time.
+
+### Socio-economic groups
+![Socio-economic groups](results/visualizations/socio-economic-groups.jpg)
+
+This visualization likely compares patterns across different social or economic groupings, which is a core part of multi-dimensional resilience analysis.
+
+### Vulnerability vs exposure map
+![Vulnerability vs exposure map](results/visualizations/vulnerability-vs-exposure-map.jpg)
+
+This screenshot likely compares two of the most important dimensions in the project — vulnerability and exposure — in a geographic or matrix-based view.
+
+## Summary of Visual Assets
+
+The screenshots and result images together document the full project pipeline:
+
+- the **code screenshots** explain how data is merged and prepared
+- the **tables screenshot** confirms the final dataset structure
+- the **visualization screenshots** communicate the findings and dashboard outputs
+
+These assets are important because they make the project understandable even to someone who does not run the code directly.
+
+## Analytical Value
+
+This repository is useful because it approaches disaster resilience as a structured, multi-dimensional problem. That matters because resilience cannot be captured by one indicator alone. A place may have high exposure but also strong adaptive capacity, or low exposure but significant vulnerability. Only by combining these aspects can meaningful comparisons be made.
+
+The project therefore supports:
+
+- policy-oriented analysis
+- regional comparison
+- storytelling through dashboards
+- educational use in data science and geography
+- reproducible data transformation workflows
 
 ## Technical Highlights
 
-The repository has several notable technical characteristics:
-
 - Written entirely in **Python**
-- Uses a modular folder structure to separate source code, data, results, and documentation
-- Includes a **dataset fusion pipeline**
-- Applies **feature engineering** to support resilience analysis
-- Produces **processed outputs** for later use
-- Includes a **Tableau workbook** for interactive analysis
-- Uses screenshots to document the workflow and final results
-- Supports a complete path from raw data to polished presentation
-
-## Why the Project Is Valuable
-
-Disaster resilience is a critical topic because it affects humanitarian planning, climate adaptation, infrastructure development, and public policy. A repository like this is valuable because it does more than store data or produce charts. It builds a structured framework for understanding a complex problem.
-
-The project can be useful for:
-
-- researchers studying vulnerability and resilience
-- decision-makers involved in disaster planning
-- educators teaching data analysis and resilience concepts
-- analysts comparing regions and building summaries
-- visualization designers creating interactive explanation tools
-
-By fusing datasets and organizing the outputs carefully, the repository supports both technical analysis and public communication.
+- Uses a modular project structure
+- Includes a dataset fusion pipeline
+- Applies feature engineering for resilience analysis
+- Stores results as both tables and visual assets
+- Includes documentation files for transparency
+- Uses Tableau for interactive storytelling
+- Provides screenshots for clear explanation of the workflow and outputs
 
 ## Conclusion
 
-Multi-Dimensional Disaster Resilience Analysis is a strong example of a data-driven project built around fusion, feature engineering, documentation, and interactive visualization. The repository is thoughtfully organized into source code, data, documentation, results, screenshots, and Tableau assets, which makes the workflow understandable and reproducible.
+Multi-Dimensional Disaster Resilience Analysis is a complete and carefully organized project for understanding disaster resilience through fused data, engineered features, and interactive visual storytelling. The repository combines data processing, documentation, output generation, and dashboard presentation into one coherent workflow.
 
-The project’s main strength is that it turns a complex topic into a structured analytical pipeline. Instead of relying on one dataset or one metric, it combines multiple dimensions of resilience into a single framework that can be explored visually and interpreted meaningfully. The screenshots and documentation make the analysis accessible, while the Tableau workbook adds an interactive layer for presentation and discovery.
+Its strength lies in the way it connects technical analysis to visual communication. The Python fusion script prepares the data, the documentation explains the dataset, the results folder captures the outputs, and the Tableau workbook delivers the final interactive experience. The screenshots reinforce this workflow by showing the project’s structure, the data preparation process, and the resulting visuals.
 
-Overall, this repository provides a complete foundation for understanding disaster resilience at a global level and presents the results in a clear, professional, and visually supported format.
+Overall, this repository provides a strong example of how data fusion and visualization can be used to study a complex global issue in a clear, reproducible, and meaningful way.
