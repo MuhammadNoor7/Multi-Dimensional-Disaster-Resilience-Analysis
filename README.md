@@ -111,13 +111,13 @@ The repository includes a metadata file that documents author contributions.
 ### `metadata/authors.txt`
 The authorship file identifies the contributors and their roles:
 
-- **i232520 – Muhammad Noor**
+- **Muhammad Noor**
   - Helped in data finding
   - Helped in data fusion
   - Helped in documenting dataset sheet
   - Report making and analysis summarization
 
-- **i232536 – Ibrahim Kiani**
+- **Ibrahim Kiani**
   - Helped in making Tableau visualizations
   - Feature engineering and model formulation
   - Conducted comparative analysis
@@ -206,10 +206,6 @@ The `results/outputs/` and `results/visualizations/` files show how the project 
 
 This screenshot shows the resulting analysis-ready table, confirming that the data fusion process produced a structured dataset.
 
-### Disaster types flow
-![Disaster types flow](results/visualizations/disaster-types-flow.jpg)
-
-This visual appears to summarize how disaster categories or pathways are represented in the final analysis.
 
 ### Interactive dashboard overview
 ![Interactive dashboard overview](results/visualizations/interactive-dashboard-overview.jpg)
@@ -220,6 +216,11 @@ This screenshot presents the overall dashboard layout and shows how the final vi
 ![Resilience over time](results/visualizations/resilience-over-time.jpg)
 
 This image likely shows temporal trends, helping the viewer understand how resilience-related measures change over time.
+
+### Disaster types flow
+![Disaster types flow](results/visualizations/disaster-types-flow.jpg)
+
+This visual appears to summarize how disaster categories or pathways are represented in the final analysis.
 
 ### Socio-economic groups
 ![Socio-economic groups](results/visualizations/socio-economic-groups.jpg)
